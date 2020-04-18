@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Home Template
+                    Laravel - erstes Template
                 </div>
             </div>
         </div>
