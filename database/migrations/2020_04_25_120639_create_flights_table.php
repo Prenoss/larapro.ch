@@ -16,7 +16,7 @@ class CreateFlightsTable extends Migration
         Schema::create('flights', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('plane_id');
-            $table->bigInteger('number');
+            $table->bigInteger('number')->unique();
             $table->dateTime('starting')->nullable();
             $table->dateTime('landing')->nullable();
 

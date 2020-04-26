@@ -16,7 +16,7 @@ class CreateGatesTable extends Migration
         Schema::create('gates', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('flight_id');
-            $table->bigInteger('number');
+            $table->bigInteger('number')->unique();
             $table->enum('size', ['small', 'big'])->default('small');
             $table->boolean('free')->default(1);
             $table->boolean('international')->default(1);
